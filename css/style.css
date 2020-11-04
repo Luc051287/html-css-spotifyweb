@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+/*Per FLOAT*/
+main {
+  height: calc(100% - 90px);
+  overflow-y: hidden;
+}
+
+.main_content {
+  /*se metto 100% lui non saprebbe a cosa calcolarlo, perchè lui non ha un riferimento (in larghezza invece si perchè considera il body) a meno che io non dia una altezza al main!*/
+  height: calc(100vh - 90px)
+}
+
+/*in realtà anche il footer si potrebbe posizionare con flex? Oppure sarebbe meglio con il float?*/
+footer {
+  width: 100%;
+  height: 90px;
+  /* position: fixed;
+  bottom: 0;
+  left: 0; */
+}
+
+/*FLEX*/
+
+main {
+  display: flex;
+}
+
+.main_nav {
+  /*si puo non mettere l'height perchè il valore di default è stretch!*/
+}
+
+.main_content {
+  /*si puo non mettere l'height perchè il valore di default è stretch!*/
+}
+
+/*Per active usare la pseudo classe, alla fine è un elemento decorativo, e anche usare il selettore acrive!*/
+/*USARE BOOTSTRAP PER IL FOOTER POTREBBE ESSERE INTELIGENTE*/
