@@ -6,6 +6,7 @@
 
 body {
   color: #FFFFFF;
+  font-size: 14px;
 }
 
 .box {
@@ -34,6 +35,17 @@ main {
   background-color: #040404;
 }
 
+#logo {
+  width: 100%;
+  height: 70px;
+  padding: 10px 0;
+}
+
+#logo > img {
+  max-width: 70%;
+  margin-left: 15px;
+}
+
 #main_content {
   position: relative;
   background-color: #121212;
@@ -42,13 +54,34 @@ main {
 }
 
 #upgrade_bar {
+  text-align: right;
   width: calc(100% - 250px);
   height: 70px;
   background-color: rgba(0,0,0,0.5);
-  /*da verificare*/
   position: fixed;
   top: 0;
   right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px;
+}
+
+#upgrade_bar > button {
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  color:#FFFFFF;
+  padding: 10px 30px;
+  text-decoration: none;
+  margin: 4px 2px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+#upgrade_bar > button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 #main_page > nav {
@@ -56,11 +89,18 @@ main {
 }
 
 ul.hlist {
-  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-li {
+ul.hlist > li {
   display: inline-block;
+}
+
+ul.hlist > li > a {
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 section {
