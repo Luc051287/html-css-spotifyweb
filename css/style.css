@@ -8,9 +8,10 @@ body {
   color: #FFFFFF;
 }
 
-[class*="col-"] {
+.box {
   border: 2px solid white;
   height: 90px;
+  padding: 5px;
 }
 
 h2 {
@@ -66,7 +67,7 @@ section {
   background-color: lightblue;
 }
 
-.row_main {
+.row {
   display: flex;
   flex-wrap: wrap;
   padding: 5px;
@@ -88,6 +89,19 @@ footer {
   background-color: #282828;
 }
 
+.container {
+  display: flex;
+}
+
+.box.track, .box.audio {
+  width: calc((100% / 12) * 3);
+}
+
+.box.play {
+  width: calc((100% / 12) * 6);
+}
+
+/*IN CASO POI USARE PSEUDO SELETTORI*/
 .value {
   margin-top: 10px;
   border-radius: 50px;
