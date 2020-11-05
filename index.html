@@ -20,42 +20,57 @@
             <img src="img/logo.png" alt="">
           </div>
           <nav class="vertical_nav">
-            <ul id="home_menu">
-              <li>
-                <img src="" alt="">
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <img src="" alt="">
-                <a href="#">Cerca</a>
-              </li>
-              <li>
-                <img src="" alt="">
-                <a href="#">La tua libreria</a>
-              </li>
-            </ul>
-            <ul id="create_playlist">
-              <li class="text_uppercase">Playlist</li>
-              <li>
-                <img src="" alt="">
-                Crea Playlist
-              </li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-            </ul>
-            <div class="user">
-              <div class="install_app">
-                <img src="" alt="">
-                <span>Installa app</span>
+            <section id="home_menu">
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="img/home.svg" alt="Home">
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/search.svg" alt="Search">
+                    <span>Cerca</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/library.svg" alt="Library">
+                    <span>La tua libreria</span>
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <section id="create_playlist">
+              <div id="playlist_creation">
+                <h3 class="text_uppercase">Playlist</h3>
+                <a href="#">
+                  <img src="img/plus.svg" alt="">
+                  <span>Crea Playlist</span>
+                </a>
               </div>
+              <ul>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+              </ul>
+            </section>
+            <section class="user">
+              <a href="#" class="install_app">
+                <i class="fas fa-arrow-circle-down"></i>
+                <span>Installa app</span>
+              </a>
               <hr>
-              <span>John Doe</span>
-            </div>
+              <a href="#" class="user_name">
+                <i class="fas fa-user-circle"></i>
+                <span>John Doe</span>
+              </a>
+            </section>
           </nav>
         </aside>
 
