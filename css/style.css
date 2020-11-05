@@ -13,9 +13,9 @@ body {
 }
 
 .box {
-  border: 2px solid white;
+  border: 1px solid white;
   height: 90px;
-  padding: 5px;
+  padding: 10px;
 }
 
 h2 {
@@ -114,7 +114,6 @@ main {
 
 #create_playlist ul {
   overflow-y: scroll;
-  max-height: 200px;
 }
 
 #create_playlist a {
@@ -237,27 +236,62 @@ footer {
 
 .box.track, .box.audio {
   width: calc((100% / 12) * 3);
+  display: flex;
+  align-items: center;
+}
+
+.track_cover {
+  background-image: url("../img/track.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.icons {
+  margin: auto;
+  font-size: 16px;
+}
+
+.icons > i:first-child {
+  margin-right: 15px;
 }
 
 .box.play {
   width: calc((100% / 12) * 6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/*IN CASO POI USARE PSEUDO SELETTORI*/
-.value {
-  margin-top: 10px;
-  border-radius: 50px;
+.player_buttons {
+  font-size: 25px;
+  margin-bottom: 7px;
+  text-align: center;
+}
+
+.player_buttons > i {
+  margin: 0 15px;
+}
+
+.player_time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar {
   background-color: #535353;
   height: 5px;
-  position: relative;
+  width: 75%;
+  border-radius: 5px;
+  margin: 0 7px;
 }
 
-.status {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100px;
+.elapsed {
+  width: 15%;
   height: 5px;
-  background-color: white;
+  background-color: #FFFFFF;
   border-radius: 5px;
 }
