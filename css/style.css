@@ -292,7 +292,12 @@ footer {
   height: 5px;
   width: 75%;
   border-radius: 5px;
-  margin: 0 7px;
+  margin: 0 20px;
+  position: relative;
+}
+
+.box.audio .bar {
+  margin: 0 5px;
 }
 
 .elapsed {
@@ -300,6 +305,36 @@ footer {
   height: 5px;
   background-color: #FFFFFF;
   border-radius: 5px;
+}
+
+.elapsed::after {
+  content: "";
+  position: absolute;
+  visibility: hidden;
+  top: 50%;
+  left: calc(15% - 15px/2);
+  transform: translateY(-50%);
+  display: inline-block;
+  background-color: white;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.box.audio .elapsed::after {
+  left: calc(55% - 15px/2);
+}
+
+.bar:hover .elapsed {
+  background-color: lightgreen;
+}
+
+.bar:hover .elapsed::after {
+  visibility: visible;
+}
+
+.bar:hover {
+  cursor: pointer;
 }
 
 .box.audio .icons > i {
