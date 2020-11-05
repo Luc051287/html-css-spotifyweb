@@ -20,6 +20,9 @@ body {
 h2 {
   width: 100%;
   color: #FFFFFF;
+}
+
+.row_title {
   margin: 15px 0 30px;
 }
 
@@ -215,18 +218,25 @@ ul.hlist > li {
 
 .row {
   display: flex;
+  width: 100%;
   justify-content: space-between;
 }
 
 .square {
   text-align: center;
   padding-right: 10px;
-  flex-basis: 210px;
+  flex-basis: 190px;
 }
 
 .square > img {
   width: 100%
 }
+
+#artisti_popolari .square > img {
+  border-radius: 50%;
+}
+
+/*chiedere quale è la soluzione migliore per il responsive orizzontale, ovvero se inserire div vuoti oppure cambiare la width della row per ogni riga*/
 
 .white {
   background-color: white;
