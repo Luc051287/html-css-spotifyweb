@@ -13,7 +13,6 @@ body {
 }
 
 .box {
-  border: 1px solid white;
   height: 90px;
   padding: 10px;
 }
@@ -240,6 +239,10 @@ footer {
   align-items: center;
 }
 
+.box.audio {
+  justify-content: flex-end;
+}
+
 .track_cover {
   background-image: url("../img/track.jpg");
   background-position: center;
@@ -250,11 +253,14 @@ footer {
 }
 
 .icons {
-  margin: auto;
   font-size: 16px;
 }
 
-.icons > i:first-child {
+.box.track .icons {
+  margin: auto;
+}
+
+.box.track .icons > i:first-child {
   margin-right: 15px;
 }
 
@@ -294,4 +300,16 @@ footer {
   height: 5px;
   background-color: #FFFFFF;
   border-radius: 5px;
+}
+
+.box.audio .icons > i {
+  margin: 0 5px;
+}
+
+.box.audio .elapsed {
+  width: 55%;
+}
+
+.box.audio .bar {
+  width: 35%;
 }
