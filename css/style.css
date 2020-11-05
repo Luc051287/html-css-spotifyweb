@@ -20,6 +20,7 @@ body {
 h2 {
   width: 100%;
   color: #FFFFFF;
+  margin: 15px 0 30px;
 }
 
 h3 {
@@ -53,6 +54,10 @@ main {
   display: flex;
   height: calc(100vh - 90px);
   overflow-y: hidden;
+}
+
+#main_page_nav {
+  padding: 15px;
 }
 
 #main_side_nav {
@@ -205,18 +210,22 @@ ul.hlist {
 
 ul.hlist > li {
   display: inline-block;
+  padding: 10px;
 }
 
 .row {
   display: flex;
-  flex-wrap: wrap;
-  padding: 5px;
+  justify-content: space-between;
 }
 
 .square {
-  flex-basis: 170px;
-  height: 170px;
-  border: 2px solid black;
+  text-align: center;
+  padding-right: 10px;
+  flex-basis: 210px;
+}
+
+.square > img {
+  width: 100%
 }
 
 .white {
@@ -243,6 +252,7 @@ footer {
   justify-content: flex-end;
 }
 
+/*così assicuro sia un quadrato, ma in genere sono sempre quadrati le copertine degli album, in caso mettere img*/
 .track_cover {
   background-image: url("../img/track.jpg");
   background-position: center;
@@ -272,9 +282,13 @@ footer {
 }
 
 .player_buttons {
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 7px;
   text-align: center;
+}
+
+.player_buttons > i:nth-child(3){
+  font-size: 30px;
 }
 
 .player_buttons > i {
