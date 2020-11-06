@@ -18,7 +18,8 @@
 
         <aside id="main_side_nav">
           <div id="logo">
-            <img src="img/logo.png" alt="">
+            <img class="no_display_xs" src="img/logo.png" alt="">
+            <img class="no_display_sm" src="img/logosmall.svg" alt="">
           </div>
           <nav class="vertical_nav">
             <section id="home_menu">
@@ -26,24 +27,24 @@
                 <li class="active">
                   <a class="active" href="#">
                     <img src="img/home.svg" alt="Home">
-                    <span>Home</span>
+                    <span class="no_display_xs">Home</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <img src="img/search.svg" alt="Search">
-                    <span>Cerca</span>
+                    <span class="no_display_xs">Cerca</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <img src="img/library.svg" alt="Library">
-                    <span>La tua libreria</span>
+                    <span class="no_display_xs">La tua libreria</span>
                   </a>
                 </li>
               </ul>
             </section>
-            <section id="create_playlist">
+            <section id="create_playlist" class="hidden_xs">
               <div id="playlist_creation">
                 <h3 class="text_uppercase">Playlist</h3>
                 <a href="#">
@@ -64,12 +65,12 @@
             <section class="user">
               <a href="#" class="install_app">
                 <i class="fas fa-arrow-circle-down"></i>
-                <span>Installa app</span>
+                <span class="no_display_xs">Installa app</span>
               </a>
-              <hr>
+              <hr class="no_display_xs">
               <a href="#" class="user_name">
                 <i class="fas fa-user-circle"></i>
-                <span>John Doe</span>
+                <span class="no_display_xs">John Doe</span>
               </a>
             </section>
           </nav>
