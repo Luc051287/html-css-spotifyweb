@@ -228,12 +228,27 @@ ul.hlist > li {
   flex-basis: 190px;
 }
 
+/*si potrebbe usare object-fit e object-position*/
 .square > img {
   width: 100%
 }
 
 #artisti_popolari .square > img {
   border-radius: 50%;
+}
+
+@media (max-width: 991px) {
+
+  .row {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .square {
+    flex-basis: calc(100%/4);
+    margin-bottom: 10px;
+  }
+
 }
 
 /*chiedere quale è la soluzione migliore per il responsive orizzontale, ovvero se inserire div vuoti oppure cambiare la width della row per ogni riga*/
@@ -250,15 +265,16 @@ footer {
 
 .container {
   display: flex;
+  justify-content: space-between;
 }
 
 .box.track, .box.audio {
-  width: calc((100% / 12) * 3);
   display: flex;
   align-items: center;
 }
 
 .box.audio {
+  width: 250px;
   justify-content: flex-end;
 }
 
@@ -270,6 +286,7 @@ footer {
   width: 50px;
   height: 50px;
   margin-right: 10px;
+  flex-shrink: 0;
 }
 
 .icons {
@@ -277,7 +294,7 @@ footer {
 }
 
 .box.track .icons {
-  margin: auto;
+  margin-left: 10px;
 }
 
 .box.track .icons > i:first-child {
@@ -302,7 +319,7 @@ footer {
 }
 
 .player_buttons > i {
-  margin: 0 15px;
+  margin: 0 7px;
 }
 
 .player_time {
