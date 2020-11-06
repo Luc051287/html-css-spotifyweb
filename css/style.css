@@ -290,7 +290,7 @@ footer {
 }
 
 .icons {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .box.track .icons {
@@ -338,6 +338,7 @@ footer {
 }
 
 .box.audio .bar {
+  width: 44%;
   margin: 0 5px;
 }
 
@@ -363,7 +364,7 @@ footer {
 }
 
 .box.audio .elapsed::after {
-  left: calc(55% - 15px/2);
+  left: calc(30% - 15px/2);
 }
 
 .bar:hover .elapsed {
@@ -383,9 +384,5 @@ footer {
 }
 
 .box.audio .elapsed {
-  width: 55%;
-}
-
-.box.audio .bar {
-  width: 35%;
+  width: 30%;
 }
