@@ -70,7 +70,6 @@ main {
 }
 
 #logo {
-  /* width: 100%; */
   height: 70px;
   padding: 10px 0;
 }
@@ -308,11 +307,8 @@ div.album:hover .wrap_play {
   border-radius: 50%;
 }
 
-/*chiedere quale è la soluzione migliore per il responsive orizzontale, ovvero se inserire div vuoti oppure cambiare la width della row per ogni riga*/
-
 /*FOOTER*/
 footer {
-  /* width: 100%; */
   background-color: #282828;
 }
 
@@ -584,8 +580,6 @@ footer {
   main {
     height: calc(100vh - 180px);
   }
-
-  /*allargare un po l'icona play quando sopra album*/
 
   .square {
     flex-basis: 100%;
