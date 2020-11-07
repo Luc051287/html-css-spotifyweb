@@ -14,7 +14,7 @@
     <div class="wrapper">
 
       <!-- MAIN -->
-      <main>
+      <main class="flex_display">
         <!-- SIDE BAR -->
         <aside id="main_side_nav">
           <div id="logo">
@@ -22,7 +22,7 @@
             <img class="no_display_sm" src="img/logosmall.svg" alt="">
           </div>
           <!-- VERTICAL NAVIGATION BAR -->
-          <nav class="vertical_nav">
+          <nav class="vertical_nav flex_display">
             <!-- HOME MENU -->
             <section id="home_menu">
               <ul>
@@ -47,7 +47,7 @@
               </ul>
             </section>
             <!-- PLAYLIST -->
-            <section id="playlist" class="hidden_xs">
+            <section id="playlist" class="flex_display hidden_xs">
               <div id="playlist_creation">
                 <h3 class="text_uppercase">Playlist</h3>
                 <a href="#">
@@ -85,7 +85,7 @@
         <!-- MAIN CONTENT -->
         <section id="main_content">
             <!-- UP BAR/UPGRADE -->
-          <div id="upgrade_bar">
+          <div id="upgrade_bar" class="flex_display">
             <button type="button" name="button" class="text_uppercase">Effettua l'Upgrade</button>
           </div>
           <!-- MAIN CENTRAL -->
@@ -107,7 +107,7 @@
                 <div class="row_title">
                   <h2>Recently Played</h2>
                 </div>
-                <div class="row">
+                <div class="row flex_display">
                   <div class="square">
                     <div class="album">
                       <img src="img/metallica.jpg" alt="">
@@ -175,7 +175,7 @@
                   <h2>Creato per John Doe</h2>
                   <p>Più ascolti, più accurati saranno i suggerimenti</p>
                 </div>
-                <div class="row">
+                <div class="row flex_display">
                   <div class="square">
                     <img src="img/releaseradar.jpeg" alt="">
                     <h3>Release Radar</h3>
@@ -185,13 +185,13 @@
                     <h3>Daily Mix 1</h3>
                   </div>
                   <!-- chiedere quale è la soluzione migliore per il responsive orizzontale, ovvero se inserire div vuoti oppure cambiare la width della row per ogni riga -->
-                  <div class="square">
+                  <div class="square hidden no_display_md">
 
                   </div>
-                  <div class="square">
+                  <div class="square hidden no_display_md">
 
                   </div>
-                  <div class="square">
+                  <div class="square hidden no_display_md">
 
                   </div>
                 </div>
@@ -201,7 +201,7 @@
                   <h2>Artisti più popolari</h2>
                   <p>Più ascolti, più accurati saranno i suggerimenti</p>
                 </div>
-                <div class="row">
+                <div class="row flex_display">
                   <div class="square">
                     <img src="img/delrey.jpg" alt="">
                     <h3>Lana del Rey</h3>
@@ -210,13 +210,13 @@
                     <img src="img/einaudi.jpg" alt="">
                     <h3>Ludovico Einaudi</h3>
                   </div>
-                  <div class="square">
+                  <div class="square hidden no_display_md">
 
                   </div>
-                  <div class="square">
+                  <div class="square hidden no_display_md">
 
                   </div>
-                  <div class="square">
+                  <div class="square hidden no_display_md">
 
                   </div>
                 </div>
@@ -231,9 +231,9 @@
 
       <!-- FOOTER -->
       <footer>
-        <div class="container">
+        <div class="container flex_display">
           <!-- BOX TRACK -->
-          <div class="box track">
+          <div class="box track flex_display">
             <div id="track_cover"></div>
             <div id="singer_track">
               <h4>Sinister</h4>
@@ -247,7 +247,7 @@
           <!-- /BOX TRACK -->
 
           <!-- BOX PLAYER -->
-          <div class="box play">
+          <div class="box play flex_display">
             <div id="player_buttons">
               <i class="fas fa-random no_display_xxs"></i>
               <i class="fas fa-step-backward"></i>
@@ -255,7 +255,7 @@
               <i class="fas fa-step-forward"></i>
               <i class="fas fa-redo-alt no_display_xxs"></i>
             </div>
-            <div id="player_time">
+            <div id="player_time" class="flex_display">
               <div class="minute start">0:25</div>
               <div class="bar">
                 <div class="elapsed"></div>
@@ -266,7 +266,7 @@
           <!-- /BOX PLAYER -->
 
           <!-- BOX VOLUME -->
-          <div class="box audio">
+          <div class="box audio flex_display">
             <div class="icons">
               <i class="fas fa-list"></i>
               <i class="fas fa-tv"></i>

@@ -33,6 +33,10 @@ a:hover {
   color: #FFFFFF;
 }
 
+.flex_display {
+  display: flex;
+}
+
 .wrapper {
   width: 100%;
   height: 100vh;
@@ -43,7 +47,7 @@ a:hover {
 }
 
 main {
-  display: flex;
+  /* display: flex; */
   height: calc(100vh - 90px);
   overflow-y: hidden;
 }
@@ -54,6 +58,10 @@ main {
 
 .active {
   color: #FFFFFF;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 /* SIDE BAR */
@@ -78,7 +86,7 @@ main {
 }
 
 .vertical_nav {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   height: calc(100% - 70px);
   padding: 5px 15px;
@@ -123,7 +131,7 @@ main {
   margin: 15px 0;
   min-height: 140px;
   overflow-y: hidden;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
 }
 
@@ -196,7 +204,7 @@ main {
   position: fixed;
   top: 0;
   right: 0;
-  display: flex;
+  /* display: flex; */
   justify-content: flex-end;
   align-items: center;
   padding-right: 15px;
@@ -257,7 +265,7 @@ ul.hlist > li {
 }
 
 .row {
-  display: flex;
+  /* display: flex; */
   width: 100%;
   justify-content: space-between;
 }
@@ -323,7 +331,7 @@ footer {
 }
 
 .container {
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
 }
 
@@ -333,7 +341,7 @@ footer {
 }
 
 .box.track, .box.audio {
-  display: flex;
+  /* display: flex; */
   align-items: center;
 }
 
@@ -380,7 +388,7 @@ footer {
 
 .box.play {
   width: calc((100% / 12) * 6);
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: center;
 }
@@ -410,7 +418,7 @@ footer {
 }
 
 #player_time {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
 }
@@ -483,6 +491,10 @@ footer {
 
   .square {
     flex-basis: calc(100%/4);
+  }
+
+  .no_display_md {
+    display: none;
   }
 
 }
@@ -591,6 +603,8 @@ footer {
     height: calc(100vh - 180px);
   }
 
+  /*allargare un po l'icona play quando sopra album*/
+
   .square {
     flex-basis: 100%;
   }
@@ -610,6 +624,10 @@ footer {
 
   .box.audio .icons > i:nth-child(1) {
     display: inline-block;
+  }
+
+  .wrap_play > i {
+    font-size: 100px;
   }
 
 }
