@@ -538,6 +538,14 @@ footer {
     font-size: 30px;
   }
 
+  #playlist {
+    min-height: 0;
+  }
+
+  #playlist ul {
+    overflow-y: hidden;
+  }
+
   #user {
     text-align: center;
   }
@@ -556,6 +564,10 @@ footer {
 
   .square {
     flex-basis: calc(100%/2);
+  }
+
+  .wrap_play > i {
+    font-size: 90px;
   }
 
 }
