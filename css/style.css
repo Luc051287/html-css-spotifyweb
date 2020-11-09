@@ -208,7 +208,7 @@ main {
   border-radius: 20px;
   font-weight: bold;
   font-size: 0.9em;
-  transition: all .08s ease-in-out;
+  transition: transform .08s ease-in-out;
 }
 
 #upgrade_bar > button:hover {
@@ -385,7 +385,7 @@ footer {
 
 #player_buttons > i:nth-child(3){
   font-size: 30px;
-  transition: all .08s ease-in-out;
+  transition: transform .08s ease-in-out;
 }
 
 #player_buttons > i:nth-child(3):hover {
