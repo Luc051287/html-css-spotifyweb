@@ -409,6 +409,7 @@ footer {
   border-radius: 5px;
   margin: 0 20px;
   position: relative;
+  cursor: pointer;
 }
 
 .box.audio .bar {
@@ -447,10 +448,6 @@ footer {
 
 .bar:hover .elapsed::after {
   visibility: visible;
-}
-
-.bar:hover {
-  cursor: pointer;
 }
 
 .box.audio .icons > i {
