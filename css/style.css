@@ -287,7 +287,8 @@ ul.hlist > li {
   position: absolute;
   top: 0;
   left:0;
-  display: none;
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
 }
 
 .wrap_play > i {
@@ -300,7 +301,7 @@ ul.hlist > li {
 
 div.album:hover .wrap_play {
   cursor: pointer;
-  display: block;
+  opacity: 1;
 }
 
 #artisti_popolari .square > img {
@@ -480,7 +481,7 @@ footer {
 @media (max-width: 991px) {
 
   .square {
-    flex-basis: calc(100%/2);
+    flex-basis: calc(100%/3);
   }
 
 }
@@ -556,6 +557,10 @@ footer {
     width: 30px;
   }
 
+  .square {
+    flex-basis: calc(100%/2);
+  }
+
 }
 
 @media (max-width: 579px) {
@@ -585,7 +590,7 @@ footer {
     flex-basis: 100%;
   }
 
-  .container {
+  footer > .container {
     flex-wrap: wrap;
   }
 
@@ -604,6 +609,10 @@ footer {
 
   .wrap_play > i {
     font-size: 100px;
+  }
+
+  #player_buttons > i {
+    margin: 0 15px;
   }
 
 }
