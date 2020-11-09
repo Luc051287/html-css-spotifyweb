@@ -389,7 +389,7 @@ footer {
 }
 
 #player_buttons > i:nth-child(3):hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 #player_buttons > i {
