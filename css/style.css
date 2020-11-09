@@ -109,11 +109,11 @@ main {
   content: "";
   display: inline-block;
   height: 100%;
-  width: 1px;
+  width: 2px;
   background-color: #ADFD31;
   vertical-align: middle;
   margin-left: -15px;
-  margin-right: 10px;
+  margin-right: 9px;
 }
 
 #home_menu li:hover img {
